@@ -40,6 +40,12 @@ def turn(board)
     move(board, index)
     display_board(board)
   else
-    puts "Invalid Number, please enter 1-9:"
+    until valid_move?(board,index) == true
+      puts "Invalid Number, please enter 1-9:"
+      num = gets.strip
+      index = input_to_index(num)
+    end
+    move(board, index)
+    display_board(board)
   end
 end
