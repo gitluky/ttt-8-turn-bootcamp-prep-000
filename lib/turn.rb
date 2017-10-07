@@ -26,7 +26,7 @@ def position_taken?(board,index)
   end
 end
 
-def move(board, index, letter = "X")
+def move(board, index, letter)
   if valid_move?(board,index) == true
     board[index] = "#{letter}"
   end
