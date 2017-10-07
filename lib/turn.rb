@@ -37,7 +37,7 @@ def turn(board)
   num = gets.strip
   index = input_to_index(num)
   if valid_move?(board,index) == true
-    move(board, index, letter)
+    move(board, index)
     display_board(board)
   else
     puts "Invalid Number, go again"
