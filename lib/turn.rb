@@ -40,7 +40,9 @@ def turn(board)
     move(board, index)
     display_board(board)
     puts "Please enter 1-9:"
+    num = gets.strip
   else
     puts "Invalid Number, please enter 1-9:"
+    num = gets.strip
   end
 end
