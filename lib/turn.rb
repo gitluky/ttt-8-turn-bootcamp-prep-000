@@ -28,7 +28,6 @@ end
 
 def move(board, index, letter = "X")
     board[index] = "#{letter}"
-  end
 end
 
 def turn(board)
