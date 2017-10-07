@@ -28,7 +28,7 @@ end
 
 def move(board, index, letter = "X")
   if valid_move?(board,index) == true
-    board[index] = "#{symbol}"
+    board[index] = "#{letter}"
   end
 end
 
